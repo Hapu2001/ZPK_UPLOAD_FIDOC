@@ -1,0 +1,7 @@
+@EndUserText.label: 'Upload FI Doc'
+define service ZFI_UPLOAD_FIDOC {
+  expose ZFI_I_UPLOAD;
+  expose ZFI_I_UPLOAD_I;
+  expose ZFI_I_DIS_UP;
+  expose ZFI_I_DIS_UP_I;
+}

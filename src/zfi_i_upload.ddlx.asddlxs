@@ -1,0 +1,52 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+      typeName: 'Upload FI Document',
+      typeNamePlural: 'Upload chứng từ kế toán'
+}
+@UI.createHidden: true
+@UI.updateHidden: true
+annotate entity ZFI_I_UPLOAD with
+{
+  @UI                    : {
+
+   facet                 : [
+           {  id: 'information',
+              type: #COLLECTION,
+              label: 'Information',
+              position: 10 },
+           {  parentId: 'information',
+              id: 'headerInfomation',
+              type: #IDENTIFICATION_REFERENCE,
+              purpose: #STANDARD,
+              position: 10 },
+           { id          : 'itemList',
+             purpose     : #STANDARD,
+             type        : #LINEITEM_REFERENCE,
+             label       : 'Item List',
+             position    : 20,
+             targetElement : '_Item'
+           }] }
+  @UI: { lineItem: [{ position: 10 }], identification: [{ position:   10  }] }
+  filename;                                                              
+  @UI: { lineItem: [{ position: 20 }] , identification: [{ position:  20  }] }
+  id_doc;                                                                
+  @UI: { lineItem: [{ position: 30 }] , identification: [{ position:  30  }] }
+  companycode;                                                           
+  @UI: { lineItem: [{ position: 40 }] , identification: [{ position:  40  }] }
+  documentdate;                                                          
+  @UI: { lineItem: [{ position: 50 }] , identification: [{ position:  50  }] }
+  postingdate;                                                           
+  @UI: { lineItem: [{ position: 60 }] , identification: [{ position:  60  }] }
+  documenttype;                                                          
+  @UI: { lineItem: [{ position: 70 }] , identification: [{ position:  70  }] }
+  companycodecurrency;                                                   
+  @UI: { lineItem: [{ position: 80 }] , identification: [{ position:  80  }] }
+  exchangerate;                                                          
+  @UI: { lineItem: [{ position: 90 }] , identification: [{ position:  90  }] }
+  headertext;                                                            
+  @UI: { lineItem: [{ position: 100 }] , identification: [{ position: 100 }] }
+  documentreferenceid;                                                   
+  @UI: { lineItem: [{ position: 110 }] , identification: [{ position: 110 }] }
+  reference1idbybusinesspartner;
+
+}

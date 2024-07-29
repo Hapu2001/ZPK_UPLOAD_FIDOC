@@ -1,0 +1,9 @@
+CLASS zbp_fi_i_upload DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zfi_i_upload.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_FI_I_UPLOAD IMPLEMENTATION.
+ENDCLASS.

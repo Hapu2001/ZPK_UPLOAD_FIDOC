@@ -1,0 +1,134 @@
+@Metadata.layer: #CORE
+annotate entity ZFI_I_UPLOAD_I with
+{
+  @UI: {
+           facet: [ {  id: 'information',
+                       type: #COLLECTION,
+                       label: 'Information',
+                       position: 10 },
+                    {  parentId: 'information',
+                       id: 'headerInfomation',
+                       type: #IDENTIFICATION_REFERENCE,
+                       purpose: #STANDARD,
+                       position: 10 }
+                   ] }
+  @UI: { lineItem: [{ position: 10 }], identification: [{ position: 10 }] }
+  filename;
+  @UI: { lineItem: [{ position: 20 }], identification: [{ position: 10 }] }
+  id_doc;
+  @UI: { lineItem: [{ position: 30 }], identification: [{ position: 10 }] }
+  id_line;
+  @UI: { lineItem: [{ position: 40 }], identification: [{ position: 10 }] }
+  accountingdocumentitem;
+  @UI: { lineItem: [{ position: 50 }], identification: [{ position: 10 }] }
+  postingkey;
+  @UI: { lineItem: [{ position: 60 }], identification: [{ position: 10 }] }
+  account;
+  @UI: { lineItem: [{ position: 70 }], identification: [{ position: 10 }] }
+  mainassetnumber;
+  @UI: { lineItem: [{ position: 80 }], identification: [{ position: 10 }] }
+  subassetnumber;
+  @UI: { lineItem: [{ position: 90 }], identification: [{ position: 10 }] }
+  specialglaccount;
+  @UI: { lineItem: [{ position: 100 }], identification: [{ position: 10 }] }
+  assettransactiontype;
+  @UI: { lineItem: [{ position: 110 }], identification: [{ position: 10 }] }
+  companycodecurrency;
+  @UI: { lineItem: [{ position: 120 }], identification: [{ position: 10 }] }
+  amountinlocalcurrency;
+  @UI: { lineItem: [{ position: 130 }], identification: [{ position: 10 }] }
+  transactioncurrency;
+  @UI: { lineItem: [{ position: 140 }], identification: [{ position: 10 }] }
+  amountindoumentcurrency;
+  @UI: { lineItem: [{ position: 150 }], identification: [{ position: 10 }] }
+  taxbaseamount;
+  @UI: { lineItem: [{ position: 160 }], identification: [{ position: 10 }] }
+  assignment;
+  @UI: { lineItem: [{ position: 170 }], identification: [{ position: 10 }] }
+  businessarea;
+  @UI: { lineItem: [{ position: 180 }], identification: [{ position: 10 }] }
+  costcenter;
+  @UI: { lineItem: [{ position: 190 }], identification: [{ position: 10 }] }
+  profitcenter;
+  @UI: { lineItem: [{ position: 200 }], identification: [{ position: 10 }] }
+  internalorder;
+  @UI: { lineItem: [{ position: 210 }], identification: [{ position: 10 }] }
+  assetvaluedate;
+  @UI: { lineItem: [{ position: 220 }], identification: [{ position: 10 }] }
+  itemtext;
+  @UI: { lineItem: [{ position: 230 }], identification: [{ position: 10 }] }
+  overrideglaccount;
+  @UI: { lineItem: [{ position: 240 }], identification: [{ position: 10 }] }
+  taxcode;
+  @UI: { lineItem: [{ position: 250 }], identification: [{ position: 10 }] }
+  segment;
+  @UI: { lineItem: [{ position: 260 }], identification: [{ position: 10 }] }
+  paymentterms;
+  @UI: { lineItem: [{ position: 270 }], identification: [{ position: 10 }] }
+  paymentblockreason;
+  @UI: { lineItem: [{ position: 280 }], identification: [{ position: 10 }] }
+  paymentmethod;
+  @UI: { lineItem: [{ position: 290 }], identification: [{ position: 10 }] }
+  contractnumber;
+  @UI: { lineItem: [{ position: 300 }], identification: [{ position: 10 }] }
+  contracttype;
+  @UI: { lineItem: [{ position: 310 }], identification: [{ position: 10 }] }
+  housebank;
+  @UI: { lineItem: [{ position: 320 }], identification: [{ position: 10 }] }
+  bankaccountid;
+  @UI: { lineItem: [{ position: 330 }], identification: [{ position: 10 }] }
+  invoicerefnum;
+  @UI: { lineItem: [{ position: 340 }], identification: [{ position: 10 }] }
+  invoicefiscalyear;
+  @UI: { lineItem: [{ position: 350 }], identification: [{ position: 10 }] }
+  invoicereflineitem;
+  @UI: { lineItem: [{ position: 360 }], identification: [{ position: 10 }] }
+  purchasingno;
+  @UI: { lineItem: [{ position: 370 }], identification: [{ position: 10 }] }
+  purchasingitem;
+  @UI: { lineItem: [{ position: 380 }], identification: [{ position: 10 }] }
+  baselinedate;
+  @UI: { lineItem: [{ position: 390 }], identification: [{ position: 10 }] }
+  valuedate;
+  @UI: { lineItem: [{ position: 400 }], identification: [{ position: 10 }] }
+  saleorder;
+  @UI: { lineItem: [{ position: 410 }], identification: [{ position: 10 }] }
+  saleorderitem;
+  @UI: { lineItem: [{ position: 420 }], identification: [{ position: 10 }] }
+  ref1;
+  @UI: { lineItem: [{ position: 430 }], identification: [{ position: 10 }] }
+  ref3;
+  @UI: { lineItem: [{ position: 430 }], identification: [{ position: 10 }] }
+  longtext;
+  @UI: { lineItem: [{ position: 450 }], identification: [{ position: 10 }] }
+  material;
+  @UI: { lineItem: [{ position: 460 }], identification: [{ position: 10 }] }
+  unit;
+  @UI: { lineItem: [{ position: 470 }], identification: [{ position: 10 }] }
+  name1;
+  @UI: { lineItem: [{ position: 480 }], identification: [{ position: 10 }] }
+  name2;
+  @UI: { lineItem: [{ position: 490 }], identification: [{ position: 10 }] }
+  city;
+  @UI: { lineItem: [{ position: 500 }], identification: [{ position: 10 }] }
+  country;
+  @UI: { lineItem: [{ position: 510 }], identification: [{ position: 10 }] }
+  vatregno;
+  @UI: { lineItem: [{ position: 520 }], identification: [{ position: 10 }] }
+  quantity;
+  @UI: { lineItem: [{ position: 530 }], identification: [{ position: 10 }] }
+  customer;
+  @UI: { lineItem: [{ position: 540 }], identification: [{ position: 10 }] }
+  supplier;
+  @UI: { lineItem: [{ position: 550 }], identification: [{ position: 10 }] }
+  negativeposting;
+  @UI: { lineItem: [{ position: 560 }], identification: [{ position: 10 }] }
+  alternativepayee;
+  @UI: { lineItem: [{ position: 570 }], identification: [{ position: 10 }] }
+  mst;
+  @UI: { lineItem: [{ position: 580 }], identification: [{ position: 10 }] }
+  hotennc1;
+  @UI: { lineItem: [{ position: 590 }], identification: [{ position: 10 }] }
+  hotennc2;
+
+}

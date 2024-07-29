@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+      typeName: 'Upload FI Document',
+      typeNamePlural: 'Upload chứng từ kế toán'
+}
+annotate entity ZFI_I_DIS_UP with
+{
+  @UI                    : {
+
+     facet                 : [
+             {  id: 'information',
+                type: #COLLECTION,
+                label: 'Information',
+                position: 10 },
+             {  parentId: 'information',
+                id: 'headerInfomation',
+                type: #IDENTIFICATION_REFERENCE,
+                purpose: #STANDARD,
+                position: 10 },
+             { id          : 'itemList',
+               purpose     : #STANDARD,
+               type        : #LINEITEM_REFERENCE,
+               label       : 'Item List',
+               position    : 20,
+               targetElement : '_Item'
+             }] }
+  @UI: { lineItem: [{ position: 10 }],
+         identification: [{ position:   10  }],
+         selectionField: [{  position: 10 }] }
+  filename;
+  @UI: { lineItem: [{ position: 20 }],
+         identification: [{ position:   20  }],
+         selectionField: [{  position: 20 }] }
+  pst_user;
+  @UI: { lineItem: [{ position: 30 }],
+         identification: [{ position:   30  }],
+         selectionField: [{  position: 30 }] }
+  pst_date;
+  @UI: { lineItem: [{ position: 40 }],
+         identification: [{ position:   40  }],
+         selectionField: [{  position: 40 }] }
+  UserDescription;
+
+}

@@ -1,0 +1,26 @@
+managed implementation in class zbp_fi_i_upload unique;
+strict ( 2 );
+
+define behavior for ZFI_I_UPLOAD //alias <alias_name>
+persistent table zfi_tb_upload
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  association _Item { create; }
+}
+
+define behavior for ZFI_I_UPLOAD_I //alias <alias_name>
+persistent table zfi_tb_upload_i
+lock dependent by _header
+authorization dependent by _header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) filename, id_doc;
+  association _header;
+}
